@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container center">
+      <h1 class="text-center">Cline</h1>
+      <div class="logo"></div>
+      <h2 class="text-center">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut placeat
+        quia officia cumque ab vel voluptatem minimamagnam, quod, quas
+      </h2>
+      <p class="text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        voluptates, quae, quod, quas quibusdam voluptatem quidem voluptatum
+        voluptatibus quia quos quas. Quisquam voluptates, quae, quod, quas
+        quibusdam voluptatem quidem voluptatum voluptatibus quia quos quas.
+      </p>
+      <div class="text-center">
+        <button type="button">
+          <a href="{{ .ConfirmationURL }}">Connexion</a>
+        </button>
+      </div>
+      <p class="center2 text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        voluptates, quae, quod, quas quibusdam voluptatem quidem voluptatum
+        voluptatibus <a href="">quia quos quas</a>.
+      </p>
+      <p class="center2 text-center">
+        Quisquam voluptates, quae, quod, quas quibusdam voluptatem quidem
+        voluptatum voluptatibus quia quos quas.
+      </p>
+    </div>
+
+    <script>
+      /* console log the Actual height of the page */
+      console.log(document.documentElement.scrollHeight);
+
+      /* Each second calc height of the page */
+      setInterval(() => {
+        console.log(document.documentElement.scrollHeight);
+      }, 1000);
+
+      /* Hide an html element if scrollHeight if < 500 */
+      if (document.documentElement.scrollHeight < 500) {
+        document.querySelector(".center2").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
