@@ -12,7 +12,9 @@
     "nuxt": "3.0.0"
   },
   "dependencies": {
+    "@aws-amplify/ui-vue": "^3.0.4",
     "@nuxtjs/supabase": "^0.3.0",
+    "aws-amplify": "^5.0.5",
     "supabase": "^1.19.0"
   }
 }
